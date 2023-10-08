@@ -27,10 +27,11 @@ const Artwork = ({ artworkID }) => {
         <>
         <div>
             <h3>Title: {artTitle}</h3>
-            <h5>Year: {pieceOfArt.objectDate}</h5>
-            <div>{displayImageOrNot}</div>
+            <h4>Year: {pieceOfArt.objectDate}</h4>
+            <div className="artwork-image">{displayImageOrNot}</div>
+            <br/>
             <a href={pieceOfArt.objectURL}>See Museum's Page for {artTitle} </a>
-            <p>Where to find it in the museum: {pieceOfArt.department}</p>
+            <p><b>Where to find it in the museum: {pieceOfArt.department}</b></p>
         </div>
         </>
     );

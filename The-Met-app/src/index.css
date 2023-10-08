@@ -1,4 +1,27 @@
-:root {
+/*
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} 
+*/
+
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -23,6 +46,52 @@ h1 {
   line-height: 1.1;
 }
 
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+
+
+
+
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: black;
+  /* background: linear-gradient(0deg, #dd8181, #ffffff); */
+
+  font-synthesis: none;
+  -webkit-font-smoothing:antialiased;
+  height:fit-content
+} 
+
+body {
+  background: linear-gradient(0deg, #dd8181, #fdf2f2);
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+div > img {
+  max-width: 100%;
+  max-height: 500px;
+  width: auto;
+  height: auto;
+} 
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1;
+}
+
 .artwork-container {
   max-width: 800px;
   margin: 0 auto;
@@ -31,21 +100,27 @@ h1 {
 }
 
 select {
+  background: linear-gradient(0deg, #dd8181, #fdf2f2);
+  color: black;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 500;
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   font-size: 16px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #0051ff;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #3e63d3;
 }
 
 .artwork-box {
@@ -53,5 +128,7 @@ a:hover {
   border-radius: 5px;
   padding: 20px;
   margin-top: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 2px solid #333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+  background: linear-gradient(0deg, #dd818100, #fdf2f218);
 }

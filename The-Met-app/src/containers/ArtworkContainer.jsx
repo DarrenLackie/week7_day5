@@ -32,7 +32,7 @@ const getArtwork = () => {
     return ( 
         <>
             <div className="artwork-container"></div>
-                <h1>The Met's Collection</h1>
+                <h1>The Met Collection</h1>
                 <h2>Vincent Van Gogh</h2>
                 <ArtList artworks={artworks} onArtworkSelected={handleArtworkSelected} />
                 {selectedArtworkID && 
