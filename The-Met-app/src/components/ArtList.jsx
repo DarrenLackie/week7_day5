@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 import "../index.css"
 
 const ArtList = ({ artworks, onArtworkSelected }) => {
     const [artworkDetails, setArtworkDetails] = useState([])
-    const [loading, setLoading] = useState(true)
 
     useEffect(() => {
 
@@ -12,25 +11,18 @@ const ArtList = ({ artworks, onArtworkSelected }) => {
         fetch(`https://collectionapi.metmuseum.org/public/collection/v1/objects/${artwork.id}`)
         .then((res) => res.json())
     ))
-        .then((artworkDetails) => {
-        setArtworkDetails(artworkDetails)
-        setLoading(false)
-    })
+        .then((artworkDetails) => setArtworkDetails(artworkDetails))
         .catch((err) => console.error(`Error: ${err}`))
     }, [artworks])
 
     const handleChange = (event) => {
         const selectedArtworkTitle = event.target.value
-        const selectedArtwork = artworkDetails.find((artwork) => artwork.title === selectedArtworkTitle);
+        const selectedArtwork = artworkDetails.find((artwork) => artwork.title === selectedArtworkTitle)
     
         if (selectedArtwork) {
             onArtworkSelected(selectedArtwork.objectID)
         }
     };
-
-    if (loading) {
-        return <p>Loading...</p>
-    }
 
     return (
     <>
@@ -41,7 +33,7 @@ const ArtList = ({ artworks, onArtworkSelected }) => {
         ))}
         </select>
     </>
-    );
-};
+    )
+}
 
-export default ArtList;
+export default ArtList

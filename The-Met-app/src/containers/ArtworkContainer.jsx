@@ -1,12 +1,12 @@
-import React, {useState, useEffect} from 'react';
-import ArtList from '../components/ArtList';
-import Artwork from '../components/Artwork';
+import React, {useState, useEffect} from 'react'
+import ArtList from '../components/ArtList'
+import Artwork from '../components/Artwork'
 
 
 const ArtworkContainer = () => {
 
     const [artworks, setArtworks] = useState([])
-    const [selectedArtworkID, setSelectedArtworkID] = useState(null);
+    const [selectedArtworkID, setSelectedArtworkID] = useState(null)
 
     useEffect(() => {
         getArtwork()
@@ -26,17 +26,22 @@ const getArtwork = () => {
 }
 
     const handleArtworkSelected = (selectedArtworkID) => {
-        setSelectedArtworkID(selectedArtworkID);
+        setSelectedArtworkID(selectedArtworkID)
     }
 
     return ( 
         <>
-            <h1>The Met's Collection</h1>
-            <h2>Vincent Van Gogh</h2>
-            <ArtList artworks={artworks} onArtworkSelected={handleArtworkSelected} />
-            {selectedArtworkID && <Artwork artworkID={selectedArtworkID} />}
+            <div className="artwork-container"></div>
+                <h1>The Met's Collection</h1>
+                <h2>Vincent Van Gogh</h2>
+                <ArtList artworks={artworks} onArtworkSelected={handleArtworkSelected} />
+                {selectedArtworkID && 
+                    (<div className="artwork-box">
+                        <Artwork artworkID={selectedArtworkID} />
+                    </div>
+                )}
         </>
     );
 }
 
-export default ArtworkContainer;
+export default ArtworkContainer
