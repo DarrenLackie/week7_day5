@@ -1,0 +1,9 @@
+h1 {
+    font-size: 3.2em;
+    line-height: 1;
+}
+
+.artwork-container {
+    max-width: 800px;
+    margin: 0 auto;
+}

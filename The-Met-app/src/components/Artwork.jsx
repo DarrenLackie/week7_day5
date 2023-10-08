@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import "./Artwork.css"
 
 
 const Artwork = ({ artworkID }) => {
@@ -29,9 +30,8 @@ const Artwork = ({ artworkID }) => {
             <h3>Title: {artTitle}</h3>
             <h4>Year: {pieceOfArt.objectDate}</h4>
             <div className="artwork-image">{displayImageOrNot}</div>
-            <br/>
-            <a href={pieceOfArt.objectURL}>See Museum's Page for {artTitle} </a>
             <p><b>Where to find it in the museum: {pieceOfArt.department}</b></p>
+            <a href={pieceOfArt.objectURL} target="_blank">See Museum's Page for {artTitle} </a>
         </div>
         </>
     );

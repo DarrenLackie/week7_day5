@@ -1,0 +1,28 @@
+
+nav {
+    background: linear-gradient(0deg, #dd8181, #fdf2f2);
+    padding: 10px 0;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

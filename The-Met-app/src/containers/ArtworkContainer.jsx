@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ArtList from '../components/ArtList'
 import Artwork from '../components/Artwork'
+import "./ArtworkContainer.css"
 
 
 const ArtworkContainer = () => {
@@ -32,7 +33,7 @@ const getArtwork = () => {
     return ( 
         <>
             <div className="artwork-container"></div>
-                <h1>The Met Collection</h1>
+                <h1>The Metropolitan Museum of Art Collection</h1>
                 <h2>Vincent Van Gogh</h2>
                 <ArtList artworks={artworks} onArtworkSelected={handleArtworkSelected} />
                 {selectedArtworkID && 

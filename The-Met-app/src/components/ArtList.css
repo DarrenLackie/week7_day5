@@ -1,0 +1,14 @@
+select {
+    background: linear-gradient(0deg, #dd8181, #fdf2f2);
+    color: black;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
