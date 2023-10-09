@@ -16,7 +16,7 @@ const Artwork = ({ artworkID }) => {
         .catch((err) => console.error(`Error: ${err}`))
     };
 
-    if (pieceOfArt == null) {
+    if (pieceOfArt === null) {
         return <p>Loading...</p>
     }
 
